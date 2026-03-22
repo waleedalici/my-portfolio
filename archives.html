@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Research &amp; Portfolio | The Clinical Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .newsreader { font-family: 'Newsreader', serif; }
+        .manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary-container": "#c6955e",
+                        "outline": "#74777f",
+                        "tertiary-fixed-dim": "#f2bc82",
+                        "surface": "#f6f9ff",
+                        "on-tertiary-fixed-variant": "#633f0f",
+                        "on-secondary-fixed": "#002020",
+                        "secondary": "#13696a",
+                        "primary": "#002045",
+                        "secondary-container": "#a2eded",
+                        "error": "#ba1a1a",
+                        "on-background": "#161c22",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#455f88",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-on-surface": "#ebf1f9",
+                        "secondary-fixed": "#a5eff0",
+                        "surface-variant": "#dde3eb",
+                        "surface-dim": "#d4dbe2",
+                        "on-primary-container": "#86a0cd",
+                        "surface-bright": "#f6f9ff",
+                        "secondary-fixed-dim": "#89d3d4",
+                        "on-surface-variant": "#43474e",
+                        "on-surface": "#161c22",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2b3137",
+                        "on-secondary-fixed-variant": "#004f50",
+                        "surface-container-low": "#eef4fc",
+                        "on-primary-fixed": "#001b3c",
+                        "tertiary": "#321b00",
+                        "inverse-primary": "#adc7f7",
+                        "primary-fixed-dim": "#adc7f7",
+                        "tertiary-container": "#4f2e00",
+                        "background": "#f6f9ff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#1a6d6e",
+                        "surface-container-high": "#e3e9f1",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#2b1700",
+                        "surface-container-highest": "#dde3eb",
+                        "tertiary-fixed": "#ffddba",
+                        "primary-container": "#1a365d",
+                        "surface-container": "#e8eef6",
+                        "on-primary-fixed-variant": "#2d476f"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-900" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-serif newsreader font-bold text-blue-950 text-2xl tracking-tight">The Clinical Curator</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-blue-900 font-label text-sm uppercase tracking-widest" href="#">Home</a>
+<a class="text-slate-600 hover:text-blue-900 font-label text-sm uppercase tracking-widest" href="#">About</a>
+<a class="text-slate-600 hover:text-blue-900 font-label text-sm uppercase tracking-widest" href="#">Skills</a>
+<a class="text-teal-700 font-semibold border-b-2 border-teal-600 font-label text-sm uppercase tracking-widest" href="#">Research</a>
+<button class="bg-primary-container text-on-primary-container px-5 py-2 rounded-lg font-label text-sm uppercase tracking-widest hover:opacity-80 transition-all">Contact</button>
+</nav>
+</div>
+</header>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Section / Editorial Header -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<h1 class="newsreader text-6xl md:text-8xl text-primary leading-none tracking-tight italic mb-6">Investigative <br/>Archives</h1>
+<p class="manrope text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        A curation of clinical research and biostatistical analysis focused on translating pharmaceutical data into actionable public health insights.
+                    </p>
+</div>
+<div class="md:col-span-4 flex flex-col items-start md:items-end">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="manrope text-xs font-bold uppercase tracking-[0.2em] text-secondary">Active Portfolio</span>
+</div>
+<p class="manrope text-xs text-on-surface-variant text-right italic">Updated Quarter 4, 2024</p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Research Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Featured Project (Large) -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
+<div class="h-80 w-full bg-surface-container-highest overflow-hidden">
+<img alt="Laboratory data visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Microscopic view of cellular structures with overlay data" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS2ChN6MyOsUu9Y2-cgihXN5B5IrflFUQO7c3vFFPHjy_q7nX1NqH0nw2IQeUY97zqNZsnYu62-3Jnc-HUGbzgjd_Zfk1dTz3HViHCqjVBfS3JnVNJV_FElMcq2LUIvUC_zKN0QM2W6pscGNxZFR14zTfxyQ3Yh6dZb9O-qszj2fQuUJs4l89yODL0vkK3hcbjme6GeSqu-qy2wev21CCagHj61HWFth2jDBQFzlhmJU84pbRdesWjM1Jg7jfzPmu8sBJFPxedLw0"/>
+</div>
+<div class="p-8 flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Disease Surveillance</span>
+<span class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Master's Thesis</span>
+</div>
+<h2 class="newsreader text-4xl text-primary font-bold mb-4 tracking-tight">Real-time Spatiotemporal Mapping of Viral Outbreaks in Urban Hubs</h2>
+<p class="manrope text-on-surface-variant mb-8 line-clamp-3">Utilizing longitudinal health records and pharmaceutical distribution data to predict emerging viral clusters. This project developed a proprietary Bayesian model for early detection of respiratory syndromes with a 15% lead time over traditional surveillance.</p>
+</div>
+<div class="flex items-center justify-between border-t border-surface-variant pt-6">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-primary-fixed flex items-center justify-center text-[10px] font-bold text-primary">R</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-secondary-fixed flex items-center justify-center text-[10px] font-bold text-secondary">Py</div>
+</div>
+<a class="inline-flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-xs group/btn" href="#">
+                            View Full Project
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Side Card 1 -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between border-b-2 border-secondary-fixed">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6 opacity-40" data-icon="analytics">analytics</span>
+<h3 class="newsreader text-2xl font-bold mb-4 leading-tight italic">Biostatistical Methodology in Clinical Trials</h3>
+<p class="manrope text-on-primary-container text-sm leading-relaxed mb-6">
+                        An analysis of non-inferiority margins in modern oncology trials. Focus on Phase III data synthesis and P-value interpretation errors in sparse data sets.
+                    </p>
+</div>
+<button class="bg-surface-container-high/20 hover:bg-surface-container-high/40 text-on-primary w-full py-4 rounded-lg font-label text-xs uppercase tracking-widest transition-all">
+                    Read Publication
+                </button>
+</div>
+<!-- Grid Item 2 -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary mb-4" data-icon="pill">pill</span>
+<h3 class="newsreader text-2xl text-primary font-bold mb-3 tracking-tight">Pharmaceutical Data Analysis</h3>
+<p class="manrope text-on-surface-variant text-sm leading-relaxed mb-8">
+                    Investigating prescription adherence patterns using multi-variate regression models in geriatric populations.
+                </p>
+<div class="mt-auto pt-4 flex items-center gap-1">
+<div class="w-1 h-1 rounded-full bg-secondary"></div>
+<div class="w-1 h-1 rounded-full bg-secondary/30"></div>
+<div class="w-1 h-1 rounded-full bg-secondary/30"></div>
+</div>
+</div>
+<!-- Grid Item 3 -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col border-b-2 border-secondary-fixed">
+<h3 class="newsreader text-2xl text-primary font-bold mb-3 tracking-tight">Health Outcomes Research</h3>
+<p class="manrope text-on-surface-variant text-sm leading-relaxed mb-8">
+                    A comparative study on patient-reported outcomes (PROs) versus clinical biometric markers in chronic pain management.
+                </p>
+<a class="mt-auto flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-[10px]" href="#">
+                    Project Details
+                    <span class="material-symbols-outlined text-xs" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+<!-- Grid Item 4 - Visual Block -->
+<div class="md:col-span-4 relative rounded-xl overflow-hidden group">
+<img alt="Medical lab equipment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Laboratory glassware with cool blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGThxTfeJCLGuy24TT2g89fCYvYHs4_7nZxs5idBotDSkUXZ1OA4BZ-YPPWOD3xNHueZImqzoPSosKtcjbqdsudYvYusGE0eU2w8N81YOMpuef5dPrPWZGwJUBRbdsrWPVwBjdtfpV5ycmt-6sNh3p-LjkWyxsgoYgb0-XuAC5_G4a9NvpQQwzqxFkAQ09roNn3JjtpKqJ1q7RrjdPkicnBNkply5MtF5OEtMN_KPoynZ_ZNie4QwQXpYen1KnyFmzyPDQrlsBgPM"/>
+<div class="absolute inset-0 bg-primary/40 flex items-end p-8">
+<p class="newsreader italic text-xl text-white font-semibold">"Data is the clinical pulse of modern medicine."</p>
+</div>
+</div>
+</section>
+<!-- Publications Section -->
+<section class="mt-32">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="newsreader text-4xl text-primary italic">Select Publications</h2>
+<div class="h-[1px] flex-grow bg-surface-variant"></div>
+</div>
+<div class="space-y-4">
+<div class="group flex flex-col md:flex-row md:items-center justify-between p-6 rounded-xl hover:bg-surface-container-low transition-all">
+<div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
+<span class="manrope text-xs font-bold text-secondary-container bg-on-secondary-container px-2 py-1 rounded">2024</span>
+<div>
+<h4 class="manrope font-bold text-lg text-primary">Advanced Modeling of Pharmaceutical Supply Chain Fragility</h4>
+<p class="manrope text-sm text-on-surface-variant">Journal of Biostatistics &amp; Medicine, Vol 14. Issue 2</p>
+</div>
+</div>
+<a class="mt-4 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="download">download</span>
+</a>
+</div>
+<div class="group flex flex-col md:flex-row md:items-center justify-between p-6 rounded-xl hover:bg-surface-container-low transition-all">
+<div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
+<span class="manrope text-xs font-bold text-secondary-container bg-on-secondary-container px-2 py-1 rounded">2023</span>
+<div>
+<h4 class="manrope font-bold text-lg text-primary">Machine Learning Approaches to Early Pathogen Detection</h4>
+<p class="manrope text-sm text-on-surface-variant">Clinical Computing Review, International Conference</p>
+</div>
+</div>
+<a class="mt-4 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="download">download</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-20 bg-slate-50 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto text-center md:text-left">
+<div>
+<span class="font-serif newsreader text-lg text-blue-900 font-bold">The Clinical Curator</span>
+<p class="font-sans manrope text-xs leading-relaxed text-blue-900 mt-2">© 2024 Clinical Curator. Bridging Pharmacy &amp; Biostatistics.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-blue-700 font-sans manrope text-xs uppercase tracking-widest transition-all" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-blue-700 font-sans manrope text-xs uppercase tracking-widest transition-all" href="#">ORCID</a>
+<a class="text-slate-500 hover:text-blue-700 font-sans manrope text-xs uppercase tracking-widest transition-all" href="#">GitHub</a>
+<a class="text-teal-600 underline font-sans manrope text-xs uppercase tracking-widest transition-all" href="#">Publications</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center pb-6 pt-3 px-4 bg-white/90 backdrop-blur-lg shadow-[0_-10px_30px_rgba(0,0,0,0.05)] rounded-t-3xl border-t border-slate-200/20">
+<a class="flex flex-col items-center justify-center text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="home_work">home_work</span>
+<span class="font-sans manrope uppercase tracking-widest text-[10px] font-bold mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="person_search">person_search</span>
+<span class="font-sans manrope uppercase tracking-widest text-[10px] font-bold mt-1">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-sans manrope uppercase tracking-widest text-[10px] font-bold mt-1">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100 text-blue-900 rounded-xl px-3 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-sans manrope uppercase tracking-widest text-[10px] font-bold mt-1">Research</span>
+</a>
+</nav>
+</body></html>
