@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Waleed's Innovation Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#1b1b1b",
+              "on-background": "#e2e2e2",
+              "tertiary-fixed-dim": "#ffb68e",
+              "primary-fixed": "#d5e3ff",
+              "on-tertiary": "#532200",
+              "on-error-container": "#ffdad6",
+              "surface-dim": "#131313",
+              "inverse-on-surface": "#303030",
+              "on-secondary": "#163152",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-container": "#1f1f1f",
+              "tertiary-container": "#be5600",
+              "outline-variant": "#414753",
+              "on-secondary-fixed": "#001c3a",
+              "surface-container-highest": "#353535",
+              "surface-container-high": "#2a2a2a",
+              "inverse-surface": "#e2e2e2",
+              "secondary": "#afc8f0",
+              "on-secondary-container": "#9eb7de",
+              "surface": "#131313",
+              "secondary-container": "#2f486a",
+              "outline": "#8b919e",
+              "primary-fixed-dim": "#a7c8ff",
+              "on-secondary-fixed-variant": "#2f486a",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "surface-variant": "#353535",
+              "surface-bright": "#393939",
+              "on-error": "#690005",
+              "on-tertiary-fixed-variant": "#763300",
+              "on-primary-container": "#fdfbff",
+              "secondary-fixed": "#d4e3ff",
+              "error": "#ffb4ab",
+              "primary-container": "#0074d9",
+              "tertiary-fixed": "#ffdbc9",
+              "surface-tint": "#a7c8ff",
+              "inverse-primary": "#005eb2",
+              "on-tertiary-fixed": "#331200",
+              "on-primary": "#003060",
+              "on-surface": "#e2e2e2",
+              "on-primary-fixed-variant": "#004788",
+              "on-surface-variant": "#c1c6d5",
+              "primary": "#a7c8ff",
+              "on-tertiary-container": "#fffbff",
+              "on-primary-fixed": "#001b3b",
+              "tertiary": "#ffb68e",
+              "secondary-fixed-dim": "#afc8f0"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(31, 31, 31, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .tonal-transition {
+            background: linear-gradient(to bottom, #131313, #1b1b1b);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl shadow-[0_20_40px_rgba(0,0,0,0.4)]">
+<nav class="flex justify-between items-center px-12 py-6 max-w-full mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#a7c8ff]" data-icon="biotech">biotech</span>
+<span class="text-xl font-bold tracking-tighter text-[#e2e2e2] font-headline">Waleed's Innovation Lab</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-headline font-medium tracking-tight">
+<a class="text-[#a7c8ff] border-b-2 border-[#a7c8ff] pb-1" href="#home">Home</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-all duration-300" href="#about">Research</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-all duration-300" href="#portfolio">Publications</a>
+<a class="px-6 py-2 bg-primary-container text-on-primary-container rounded-lg hover:opacity-90 transition-transform active:scale-95" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Home (Hero Section) -->
+<section class="relative min-h-screen flex items-center pt-20 px-6 md:px-12 overflow-hidden bg-surface-dim" id="home">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img alt="Laboratory Background" class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="cinematic close-up of a laboratory microscope and blue chemical solutions in a dark high-tech research environment with soft cobalt lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3DJ7oQB_4n7NdGgdccNXJ_w1ol3TKKeiEf0-pgpCNwu-yM0UY_CoQrCnvDQTJpkXkkQQ8DnHpuew16-AZLHYq6JzitAVj8sYgCAiwlq9MF_F8KC_28kQMO_FQpeyYOr_i2EM-fxAD3H14mJJFhtiUpGA18iN3JHhlX7JZRXZi-kG8TRF8LQJg9Ouwsb5a6BvXFKH156m1pb2eX69CGVO8VSeFfPqEGraHvPRbGgpo7fz0Rb_eK29E6WZbolGllWh9q8ApZg6eGv77"/>
+</div>
+<div class="relative z-20 max-w-4xl">
+<div class="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-outline-variant/15">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<h1 class="font-headline text-6xl md:text-6xl font-extrabold tracking-tighter text-on-background leading-[0.9] mb-8">
+                    Advancing Healthcare via Innovation, Research and Data in<br/><span class="text-primary">Pharmaceuticals</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
+                   I’m Waleed A., a Research & Development Pharmacist and Epidemiology & Biostatistics Master’s student dedicated to transforming science into meaningful health solutions.
+                </p>
+<div class="flex flex-wrap gap-6">
+<a class="px-8 py-4 bg-primary-container text-on-primary-container font-headline font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,116,217,0.4)] transition-all" href="#portfolio">
+                        View Portfolio
+                    </a>
+<a class="px-8 py-4 border border-outline-variant/30 text-on-surface font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all" href="#about">
+                        Technical Bio
+                    </a>
+</div>
+</div>
+<div class="absolute bottom-12 right-12 hidden lg:block">
+<div class="flex flex-col gap-4 font-label text-[10px] tracking-widest text-on-surface-variant/40 uppercase vertical-text">
+<span>Molecular Modeling</span>
+<span class="w-px h-20 bg-outline-variant/30 mx-auto"></span>
+<span>Clinical Trials</span>
+</div>
+</div>
+</section>
+<!-- About Us (Introduction) -->
+<section class="py-32 px-6 md:px-12 bg-surface-container-low relative" id="about">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] overflow-hidden rounded-lg grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
+<img alt="Pharmacist Profile" class="w-full h-full object-cover" data-alt="professional portrait of a research pharmacist in a clean white coat in a modern laboratory setting with soft blue lighting" src="img/pic.jpg">
+</div>
+<div class="absolute -bottom-8 -right-8 glass-panel p-8 rounded-lg border border-outline-variant/10 hidden md:block max-w-[280px]">
+<p class="font-label text-xs text-primary mb-2 uppercase tracking-tighter">Core Philosophy</p>
+<p class="font-body text-sm italic text-on-surface-variant leading-relaxed">
+                            "Science is most powerful when it serves people. I believe that innovation in healthcare must be guided by evidence, driven by curiosity, and aimed at improving real-world outcomes."
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-center">
+<span class="font-label text-sm text-primary uppercase tracking-[0.3em] mb-4">Introduction</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-background mb-8 tracking-tight">
+                        Who I Am<span class="text-primary-fixed-dim"> ?</span>
+                    </h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                            I'm Waleed A. a Research Pharmacist by profession with hands-on experience in pharmaceutical research, new drug development, literature surveys, new product development and healthcare innovation. Currently pursuing my Master’s in Epidemiology and Biostatistics, I focus on bridging the gap between clinical research, data-driven insights, and population health. My work is guided by a passion for translating scientific discovery into better healthcare outcomes.
+                        </p>
+<p>
+                            My expertise includes New product development, Literature surveys, New drug Development, Synthetic organic chemistry, and Regulatory compliance. I specialize in New drug development, New product development, Formulation optimization that increase drug bioavailability while minimizing systemic toxicity.
+                        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-16">
+<div>
+<p class="font-headline text-4xl font-bold text-on-background">60+</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">New Product Development</p>
+</div>
+<div>
+<p class="font-headline text-4xl font-bold text-on-background">45+</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Formulation Optimization</p>
+</div>
+<div>
+<p class="font-headline text-4xl font-bold text-on-background">08</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Clinical Successes</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- My Portfolio (Bento Grid) -->
+<section class="py-32 px-6 md:px-12 bg-background" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+<div>
+<span class="font-label text-sm text-primary uppercase tracking-[0.3em] mb-4 block">Research & Innovation</span>
+<h2 class="font-headline text-5xl font-bold text-on-background tracking-tighter">Case Studies &amp; Research</h2>
+</div>
+<div class="font-body text-on-surface-variant/60 max-w-xs text-right hidden md:block">
+        
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="Molecular Research" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="microscopic view of blue molecular crystal structures forming a geometric pattern with high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwIxnPO_29FNKsuETMnjzpamAOsN6laaLu5aAZHzuGqJTeJOsmSAknlHVYIDrDECbjSDipouNHzs5X4duFSqs5Q6SSQJQA25QhyUryIT1r35iAtG9rjI88d19QSLy83KGSHAH0WBCbYrQcLPzshHq--8OjeMnNseURz_bO8vHcGhONC1dMlLohs7VnhKkjymTHeuEplzt37GMb09xM_Rx2rbaGt5FqVlVSAlNBLx5Pn8o60UrlNMRoh24iqr-y-T5UadN0KMbz90UQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-0 p-10">
+<span class="px-3 py-1 bg-primary/20 text-primary font-label text-[10px] rounded-full mb-4 inline-block">ONGOING CLINICAL TRIAL</span>
+<h3 class="font-headline text-3xl font-bold text-on-background mb-4">Targeted Oncology Delivery Systems</h3>
+<p class="text-on-surface-variant max-w-md line-clamp-2">Investigating nanoparticle encapsulation methods for site-specific delivery of cytotoxic agents in pulmonary treatments.</p>
+<div class="mt-8 flex items-center gap-4 text-primary font-label text-xs tracking-widest">
+<span>VIEW STUDY</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Small Technical Card -->
+<!-- Medium Research Card -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/15 flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-xl font-bold text-on-background mb-3">Journal of Medicinal Chemistry</h3>
+<p class="text-sm text-on-surface-variant mb-6">"Synthetic pathways for novel benzodiazepine derivatives: A comprehensive study."</p>
+<span class="font-label text-[10px] text-on-surface-variant/40 tracking-widest">PUBLISHED OCT 2023</span>
+</div>
+<span class="absolute -bottom-10 -right-10 material-symbols-outlined text-9xl text-white/5 opacity-10" data-icon="description">description</span>
+</div>
+<!-- Portfolio Grid Bottom Row -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-[#ffb68e] mb-6" data-icon="biotech">biotech</span>
+<h3 class="font-headline text-xl font-bold text-on-background mb-3">Synthesis Automation</h3>
+<p class="text-sm text-on-surface-variant">Implementing robotic liquid handling for high-throughput screening of lead compounds.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Us -->
+<section class="py-32 px-6 md:px-12 bg-surface-container-lowest" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="font-label text-sm text-primary uppercase tracking-[0.3em] mb-4 block">Collaboration</span>
+<h2 class="font-headline text-5xl font-bold text-on-background tracking-tighter mb-8 leading-tight">Get In Touch</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md">
+                            I’m always open to connecting with fellow researchers, healthcare professionals, and collaborators. Whether you’re interested in my research or have a project idea, feel free to reach out.
+                        </p>
+<div class="space-y-8">
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase text-on-surface-variant/50 tracking-widest">Email</p>
+<p class="text-on-background font-medium">waleedalishah80@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined" data-icon="phone">phone</span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase text-on-surface-variant/50 tracking-widest">Connect</p>
+<div class="flex gap-4 mt-1">
+<a class="text-on-background hover:text-primary transition-colors" href="#">+1 929-354-4255</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/10 shadow-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 focus:border-primary focus:ring-0 text-on-background placeholder:text-on-surface-variant/20 transition-all py-3" placeholder="Dr. John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 focus:border-primary focus:ring-0 text-on-background placeholder:text-on-surface-variant/20 transition-all py-3" placeholder="john@university.edu" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Subject</label>
+<select class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 focus:border-primary focus:ring-0 text-on-background py-3 transition-all">
+<option>Research Collaboration</option>
+<option>Consultancy Inquiry</option>
+<option>General Message</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Your Message</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 focus:border-primary focus:ring-0 text-on-background placeholder:text-on-surface-variant/20 transition-all py-3 resize-none" placeholder="Briefly describe your proposal..." rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary-container text-on-primary-container font-headline font-bold rounded-lg hover:shadow-[0_0_20px_rgba(0,116,217,0.3)] transition-all uppercase tracking-widest text-xs" type="submit">
+                                Send Inquiry
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>
